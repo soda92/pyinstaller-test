@@ -1,6 +1,6 @@
 from PySide6 import QtWidgets
 import sys
-
+import os
 
 class LayoutApp(QtWidgets.QMainWindow):
     def __init__(self):
@@ -10,7 +10,8 @@ class LayoutApp(QtWidgets.QMainWindow):
         main_layout = QtWidgets.QVBoxLayout()  # 实例化一个垂直布局层
         main_widget.setLayout(main_layout)  # 设置widget控件布局为水平布局
         # 实例化3个按钮
-        button_1 = QtWidgets.QPushButton('按钮一')
+        s = ""
+        button_1 = QtWidgets.QPushButton(s)
         button_2 = QtWidgets.QPushButton('按钮二')
         button_3 = QtWidgets.QPushButton('按钮三')
         # 将按钮添加到水平布局中
